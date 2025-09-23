@@ -78,35 +78,144 @@ export default function Home() {
         </div>
       </div>
 
+        {/*全体の流れ*/}
+        <div className="w-full max-w-[800px] text-center mt-20 px-4">
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            <p className="text-lg text-gray-700 dark:text-gray-200">10/30(水) ~ 11/08(金)</p>
+            <p className="text-lg text-gray-700 dark:text-gray-200">11/13(水) 11/30(土)</p>
+            <p className="text-lg text-gray-700 dark:text-gray-200">12/01(日)</p>
+          </div>
+          <img src="/schedule.png" alt="スケジュール画像" className="mx-auto mb-4 rounded-lg shadow-lg max-w-full h-auto" />
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            <p className="text-lg text-gray-700 dark:text-gray-200">募集期間</p>
+            <p className="text-lg text-gray-700 dark:text-gray-200">事前説明会</p>
+            <p className="text-lg text-gray-700 dark:text-gray-200">ハッカソン当日</p>
+          </div>
+
+        {/* 事前説明会 */}
+        <div className="w-full max-w-[500px] mx-auto mt-24 mb-24">
+          <h2 className="text-3xl font-bold mb-6 text-center">事前説明会</h2>
+          <div className="border-2 border-black bg-white overflow-hidden">
+            <div className="divide-y-2 divide-black">
+              <div className="flex">
+                <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">17:30 ~ 17:40</div>
+                <div className="w-2/3 py-4 px-2 text-center bg-white">概要説明</div>
+              </div>
+              <div className="flex">
+                <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">17:40 ~ 17:50</div>
+                <div className="w-2/3 py-4 px-2 text-center bg-white">当日の説明</div>
+              </div>
+              <div className="flex">
+                <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">18:20 ~ 19:10</div>
+                <div className="w-2/3 py-4 px-2 text-center bg-white">オンライン座談会</div>
+              </div>
+              <div className="flex">
+                <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">19:10</div>
+                <div className="w-2/3 py-4 px-2 text-center bg-white">閉会</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          {/*オンライン座談会とは*/}
+          <div className="w-full max-w-[800px] text-center mt-24 px-4">
+            <h2 className="text-3xl font-bold mb-6">オンライン座談会</h2>
+            <p className="text-lg text-gray-700 dark:text-gray-200 mb-8">
+              オンライン座談会とは、参加者とメンターが話しやすい<br/>関係を築くことを目的とした交流会です<br/><br/>
+              技術的な質問やキャリアに関する話題はもちろん、<br/>ハッカソン以外のことでも、自由に質問できる質疑応答形式の<br/>座談会となっています<br/><br/>
+              本オンライン座談会は、ハッカソンの事前説明会の<br/>一環として実施されます<br/>
+              ぜひご参加ください！
+            </p>
+          </div>
+        </div>
+
       {/*スケジュール*/}
       <div className="w-full max-w-[800px] text-center mt-20 px-4">
         <h2 className="text-3xl font-bold mb-12">スケジュール</h2>
-        <div className="grid grid-cols-2 gap-8 mb-16">
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">1日目 2月日(月)</h3>
-            <div className="text-left space-y-2">
-              <p><span className="font-semibold">09:30~</span> 受付開始</p>
-              <p><span className="font-semibold">10:00~</span> オープニング</p>
-              <p><span className="font-semibold">10:30~</span> 開発開始</p>
-              <p><span className="font-semibold">12:30~</span> 昼食</p>
-              <p><span className="font-semibold">13:30~</span> テーマ発表</p>
-              <p><span className="font-semibold">14:00~</span> 開発再開</p>
-              <p><span className="font-semibold">17:40</span> 終了セッション</p>
-              <p><span className="font-semibold">18:00</span> 解散</p>
+        <div className="flex flex-col md:flex-row gap-8 mb-16 justify-center items-start">
+          {/* 1日目 */}
+          <div className="w-full max-w-[400px] mx-auto">
+            <h3 className="text-2xl font-bold mb-6 text-center">1日目 2月日(月)</h3>
+            <div className="border-2 border-black bg-white overflow-hidden">
+              <div className="divide-y-2 divide-black">
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">09:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">受付開始</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">10:00~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">オープニング</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">10:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">開発開始</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">12:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">昼食</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">13:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">テーマ発表</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">14:00~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">開発再開</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">17:40</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">終了セッション</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">18:00</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">解散</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-green-600 dark:text-green-400">2日目 2月日(火)</h3>
-            <div className="text-left space-y-2">
-              <p><span className="font-semibold">09:30~</span> 受付開始</p>
-              <p><span className="font-semibold">10:00~</span> 開会・事務局案内</p>
-              <p><span className="font-semibold">10:10~</span> 開発開始</p>
-              <p><span className="font-semibold">12:30~</span> 昼食</p>
-              <p><span className="font-semibold">14:00~</span> 発表準備</p>
-              <p><span className="font-semibold">14:30~</span> 開発ストップ</p>
-              <p><span className="font-semibold">15:00~</span> 発表プレゼン</p>
-              <p><span className="font-semibold">16:30~</span> 審査結果発表・表彰</p>
-              <p><span className="font-semibold">17:00</span> 閉会・解散</p>
+          {/* 2日目 */}
+          <div className="w-full max-w-[400px] mx-auto">
+            <h3 className="text-2xl font-bold mb-6 text-center">2日目 2月日(火)</h3>
+            <div className="border-2 border-black bg-white overflow-hidden">
+              <div className="divide-y-2 divide-black">
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">09:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">受付開始</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">10:00~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">開会・事務局案内</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">10:10~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">開発開始</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">12:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">昼食</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">14:00~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">発表準備</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">14:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">開発ストップ</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">15:00~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">発表プレゼン</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">16:30~</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">審査結果発表・表彰</div>
+                </div>
+                <div className="flex">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">17:00</div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white">閉会・解散</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -143,6 +252,25 @@ export default function Home() {
             </ul>
           </div>
         </div>
+      </div>
+      {/*協賛企業*/}
+      <div className="w-full max-w-[800px] text-center mt-20 px-4">
+        <h2 className="text-3xl font-bold mb-3">協賛企業</h2>
+        <p className="text-lg text-gray-700 dark:text-gray-200 mb-3">
+          合同会社DMM.com
+        </p>
+        <div className="flex justify-center items-center bg-black rounded-lg py-6 mx-auto max-w-[400px]">
+          <img src="/DMM_com_logo_RGB_white.png" alt="DMM.com" className="h-10 w-auto" />
+        </div>
+      </div>
+
+      {/*スマプロ*/}
+      <div className="w-full max-w-[800px] text-center mt-12 px-4">
+        <h2 className="text-3xl font-bold mb-8">スマプロ</h2>
+        <p className="text-lg text-gray-700 dark:text-gray-200 mb-8">
+          スマプロは金沢工業大学の学生によるアプリ開発プロジェクトです。<br/>
+          学生同士で協力し、様々なアプリやサービスを企画・開発しています。
+        </p>
       </div>
 
       {/*FAQ*/}
