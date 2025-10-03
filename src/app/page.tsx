@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pb-24">
+    <main className="flex min-h-screen flex-col items-center justify-between pb-24 bg-gray-100">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
           className="absolute inset-0 w-full h-full object-cover rounded-lg"
@@ -222,7 +222,7 @@ export default function Home() {
       </div>
 
       {/*開催概要*/}
-      <div className="w-full max-w-[800px] text-center mt-20 px-4">
+      <div className="w-full max-w-[800px] text-center mt-32 px-4">
         <h2 className="text-3xl font-bold mb-12">開催概要</h2>
         <div className="text-left space-y-8">
           <div className="pb-8 border-b border-dashed border-gray-300 dark:border-gray-600">
@@ -254,7 +254,7 @@ export default function Home() {
         </div>
       </div>
       {/*協賛企業*/}
-      <div className="w-full max-w-[800px] text-center mt-20 px-4">
+      <div className="w-full max-w-[800px] text-center mt-32 px-4">
         <h2 className="text-3xl font-bold mb-3">協賛企業</h2>
         <p className="text-lg text-gray-700 dark:text-gray-200 mb-3">
           合同会社DMM.com
