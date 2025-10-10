@@ -12,7 +12,7 @@ export default function Home() {
         {/*画像の上*/}
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl font-bold mb-6">
-            スマプロハッカソン2025
+            スマプロハッカソン2025年
           </h1>
           <p className="text-2xl mb-4">
             2月日～2月日
