@@ -1,4 +1,5 @@
 export default function Home() {
+  // テスト
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pb-24 bg-white">
       <div className="relative w-full h-[500px] flex items-center justify-center">
