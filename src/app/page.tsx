@@ -430,15 +430,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-2">参加費</h3>
             <p className="text-gray-600 font-semibold">　無料</p>
           </div>
-          <div className="pb-8 border-b border-dashed border-gray-500">
-            <h3 className="text-xl font-semibold mb-2">賞</h3>
-            <ul className="text-gray-600 list-disc list-inside space-y-1 font-semibold">
-              <li className="pl-4">最優秀賞（DMMボックスなど）</li>
-              <li className="pl-4">優秀賞（DMMボックスなど）</li>
-              <li className="pl-4">DMM賞（DMM Tシャツ）</li>
-              <li className="pl-4">参加賞（DMMステッカー）</li>
-            </ul>
-          </div>
+
           <div className="pb-8 border-b border-dashed border-gray-500">
             <h3 className="text-xl font-semibold mb-2">参加条件</h3>
             <ul className="text-gray-600 list-disc list-inside space-y-1 font-semibold">
@@ -465,6 +457,15 @@ export default function Home() {
               <br></br>
               　ぜひカメラをオンにしてご参加ください！
             </p>
+            <div className="pb-8 border-b border-dashed border-gray-500">
+              <h3 className="text-xl font-semibold mb-2">賞</h3>
+              <ul className="text-gray-600 list-disc list-inside space-y-1 font-semibold">
+                <li className="pl-4">最優秀賞（DMMボックスなど）</li>
+                <li className="pl-4">優秀賞（DMMボックスなど）</li>
+                <li className="pl-4">DMM賞（DMM Tシャツ）</li>
+                <li className="pl-4">参加賞（DMMステッカー）</li>
+              </ul>
+            </div>
           </div>
           <div className="pb-8 border-b border-dashed border-gray-500">
             <h3 className="text-xl font-semibold mb-2">審査項目</h3>
