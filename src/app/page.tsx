@@ -31,7 +31,7 @@ export default function Home() {
             受付締切）
           </p>
           <a
-            href="https://docs.google.com/forms/d/1H7bgmfPYAzJIbN_uPfzDrvEaP0uWOxC4In_QsFyV_oY/edit"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScTdqFgMcFrQyOmedgSpNIT85sklDLGI9pOnEQ0bH3EB1qiqg/viewform?usp=dialog"
             className="inline-block bg-red-500 hover:bg-slate-200 text-white font-bold py-1 sm:py-4 px-4 sm:px-9 rounded-full text-base sm:text-lg transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -175,6 +175,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center">
+                  <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-white">
+                    17:50 ~ 18:20
+                  </div>
+                  <div className="w-2/3 py-4 px-2 text-center bg-white flex items-center justify-center">
+                    DMM様による講演
+                  </div>
+                </div>
+                <div className="flex items-center">
                   <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-red-100">
                     18:20 ~ 19:10
                   </div>
@@ -258,7 +266,7 @@ export default function Home() {
                   {/* 10:30~ 開発開始 */}
                   <div className="flex items-center">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-red-200 text-sm sm:text-base">
-                      10:10~
+                      10:30~
                     </div>
                     <div className="w-2/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center bg-red-200 text-sm sm:text-base">
                       開発時間
@@ -367,11 +375,11 @@ export default function Home() {
                   {/* 16:40 情報交流会・審査結果*/}
                   <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
-                      <b></b>16:40
+                      <b></b>16:20~
                     </div>
                     <div className="w-2/3 px-2 sm:px-6 py-2 sm:py-4 text-center bg-white text-sm sm:text-base">
                       情報交流会<br></br>
-                      ​審査結果発表・表彰<br></br>
+                      順位発表・表彰<br></br>
                       フィードバック
                     </div>
                   </div>
@@ -425,9 +433,10 @@ export default function Home() {
           <div className="pb-8 border-b border-dashed border-gray-500">
             <h3 className="text-xl font-semibold mb-2">賞</h3>
             <ul className="text-gray-600 list-disc list-inside space-y-1 font-semibold">
-              <li className="pl-4">最優秀賞</li>
-              <li className="pl-4">優秀賞</li>
-              <li className="pl-4">DMM賞</li>
+              <li className="pl-4">最優秀賞（DMMボックスなど）</li>
+              <li className="pl-4">優秀賞（DMMボックスなど）</li>
+              <li className="pl-4">DMM賞（DMM Tシャツ）</li>
+              <li className="pl-4">参加賞（DMMステッカー）</li>
             </ul>
           </div>
           <div className="pb-8 border-b border-dashed border-gray-500">
@@ -441,7 +450,7 @@ export default function Home() {
                 チームで一人以上、Git/GitHubの使用経験があること
               </li>
               <li className="pl-4">PCを持っていること</li>
-              <li className="pl-4">2日間オフライン参加できること</li>
+              <li className="pl-4">2日間（2/5~2/6）オフライン参加できること</li>
               <li className="pl-4">レベルは問いません。初心者歓迎！</li>
             </ul>
           </div>
@@ -483,22 +492,41 @@ export default function Home() {
             {showModal && (
               <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
                 <div className="bg-gray-800 text-white rounded-lg p-8 max-w-md sm:max-w-3xl w-full shadow-lg relative">
-                  <h2 className="text-xl sm:text-2xl font-bold mb-5 border-b border-red-500 pb-2">開発ルール</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-5 border-b border-red-500 pb-2">
+                    開発ルール
+                  </h2>
                   <p className="mb-4 text-white font-bold">
-                    発表作品はプログラミングに関係あるもので、本イベント向けに開発したオリジナル作品とします。<br />
-                    開催中は、本イベントのSlack上で開発をしていただくようお願いします。<br />
-                    発表において、デモや説明ビデオなどでの3～5分間のプレゼンテーションを実施いただきます。<br />
-                    なお、本イベントで作成した作品の権利は、作成者に帰属します。<br /><br />
-                    ​・作品の発表時間は3～5分<br />
-                    ・Webアプリ、モバイルアプリ、Bot、ゲームなどプログラミングに関連するもので、ソフトウェアのもの<br />
-                    ・発表作品は開発期間に参加チームメンバーによって作成されたオリジナルのものとする(*1)<br />
-                    ・発表はプレゼンテーションが可能であり、作品展示時間にデモンストレーションが可能なものとする(*2) (*3)<br />
-                    ・公序良俗に反したものでないこと<br />
-                    ・作品および発表資料については、OSSやAPIなどを利用する際は、ライセンスを遵守すること<br />
-                    ・他者の著作物である漫画、CD音源、写真の無断流用等を行わないこと(*4)<br />
-                    ・大学等の教育機関や企業、団体等の情報を許可なく使用しないこと <br /><br />
-                    (*1)過去に作成したものや、他のイベントで発表済みの作品を発表することは不可<br />
-                    (*2) 発火したり、極端に大きな音を発したり重いものは不可 <br />
+                    発表作品はプログラミングに関係あるもので、本イベント向けに開発したオリジナル作品とします。
+                    <br />
+                    開催中は、本イベントのSlack上で開発をしていただくようお願いします。
+                    <br />
+                    発表において、デモや説明ビデオなどでの3～5分間のプレゼンテーションを実施いただきます。
+                    <br />
+                    なお、本イベントで作成した作品の権利は、作成者に帰属します。
+                    <br />
+                    <br />
+                    ​・作品の発表時間は3～5分
+                    <br />
+                    ・Webアプリ、モバイルアプリ、Bot、ゲームなどプログラミングに関連するもので、ソフトウェアのもの
+                    <br />
+                    ・発表作品は開発期間に参加チームメンバーによって作成されたオリジナルのものとする(*1)
+                    <br />
+                    ・発表はプレゼンテーションが可能であり、作品展示時間にデモンストレーションが可能なものとする(*2)
+                    (*3)
+                    <br />
+                    ・公序良俗に反したものでないこと
+                    <br />
+                    ・作品および発表資料については、OSSやAPIなどを利用する際は、ライセンスを遵守すること
+                    <br />
+                    ・他者の著作物である漫画、CD音源、写真の無断流用等を行わないこと(*4)
+                    <br />
+                    ・大学等の教育機関や企業、団体等の情報を許可なく使用しないこと{" "}
+                    <br />
+                    <br />
+                    (*1)過去に作成したものや、他のイベントで発表済みの作品を発表することは不可
+                    <br />
+                    (*2) 発火したり、極端に大きな音を発したり重いものは不可{" "}
+                    <br />
                     (*3)発表用の検証端末やディスプレイの貸し出しは不可 <br />
                     (*4)著作権の侵害が発覚したチームは作品の発表不可{" "}
                   </p>
