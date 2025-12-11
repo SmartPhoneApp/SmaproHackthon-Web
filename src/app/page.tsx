@@ -43,7 +43,7 @@ export default function Home() {
 
       {/*本文*/}
       <div className="w-full max-w-[800px] mx-auto text-center mt-10 sm:mt-20 px-3 sm:px-4">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-12">
+        <h1 className="text-xl sm:text-3xl font-bold mb-6 sm:mb-12">
           スマプロハッカソンとは
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -75,7 +75,7 @@ export default function Home() {
       {/* 特徴 */}
       <div className="w-screen py-10 mt-10 mb-10 overflow-x-hidden">
         <div className="max-w-[800px] mx-auto text-center px-4">
-          <h2 className="text-2xl sm:text-4xl text-red-500 font-bold mt-10 mb-12">
+          <h2 className="text-xl sm:text-3xl text-red-500 font-bold mt-10 mb-12">
             特徴
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
@@ -115,10 +115,10 @@ export default function Home() {
 
       <div className="w-screen bg-gray-900 py-10 mt-0 mb-10 overflow-x-hidden">
         <div className="max-w-[800px] mx-auto text-center px-4">
-          <h2 className="text-2xl sm:text-4xl text-white font-bold mt-5 mb-5">
+          <h2 className="text-xl sm:text-3xl text-white font-bold mt-5 mb-5">
             テーマ
           </h2>
-          <h2 className="text-2xl sm:text-6xl text-white font-bold mt-0 mb-4">
+          <h2 className="text-6xl sm:text-6xl text-white font-bold mt-0 mb-4">
             「自由」
           </h2>
           <p className="text-sm sm:text-xl text-white font-bold mt-0 mb-5 text-right">
@@ -129,13 +129,13 @@ export default function Home() {
 
       {/*全体の流れ*/}
       <div className="w-full max-w-[800px] text-center mt-5 px-4">
-        <h2 className="text-3xl font-bold mb-10 text-center">全体の流れ</h2>
+        <h2 className="text-xl sm:text-3xl font-bold mb-10 text-center">全体の流れ</h2>
         <div className="grid grid-cols-3 gap-4 mb-4">
-          <p className="text-lg text-gray-700">
+          <p className="text-base sm:text-lg text-gray-700">
             1月13日（火） ～<br></br> 28日（水）
           </p>
-          <p className="text-lg text-gray-700">1月29日（木）</p>
-          <p className="text-lg text-gray-700">
+          <p className="text-base sm:text-lg text-gray-700">1月29日（木）</p>
+          <p className="text-base sm:text-lg text-gray-700">
             2月5日（木）～<br></br>6日（金）
           </p>
         </div>
@@ -145,15 +145,15 @@ export default function Home() {
           className="mx-auto mb-4 rounded-lg max-w-full h-auto"
         />
         <div className="grid grid-cols-3 gap-4 mb-4">
-          <p className="text-lg text-gray-700">募集期間</p>
-          <p className="text-lg text-gray-700">事前説明会</p>
-          <p className="text-lg text-gray-700">ハッカソン当日</p>
+          <p className="text-base sm:text-lg text-gray-700">募集期間</p>
+          <p className="text-base sm:text-lg text-gray-700">事前説明会</p>
+          <p className="text-base sm:text-lg text-gray-700">ハッカソン当日</p>
         </div>
 
         {/* 事前説明会 */}
         <div className="relative left-1/2 right-1/2 -mx-[50vw] w-[100vw] bg-gray-900 py-20 mt-20 mb-20">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-5 text-center text-white">
+            <h2 className="text-xl sm:text-3xl font-bold mb-5 text-center text-white">
               事前説明会（オンライン開催）　1月29日（木）
             </h2>
             <div className="border-2 border-black bg-white overflow-hidden">
@@ -182,11 +182,11 @@ export default function Home() {
                     DMM様による講演
                   </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-stretch">
                   <div className="w-1/3 py-4 px-2 font-semibold text-center border-r-2 border-black bg-red-100">
                     18:20 ~ 19:10
                   </div>
-                  <div className="w-2/3 py-4 px-2 text-red-600 font-semibold text-center bg-red-100 flex items-center justify-center">
+                  <div className="w-2/3 py-4 px-2 text-red-600 font-semibold text-center bg-red-100 flex items-stretch justify-center">
                     オンライン座談会
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Home() {
               <div className="border-2 border-black bg-white overflow-hidden">
                 <div className="divide-y-2 divide-black">
                   {/* 09:30~ 受付開始 */}
-                  <div className="flex items-center min-h-[60px]">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
                       09:30~
                     </div>
@@ -255,7 +255,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 10:00~ 開会・オープニング */}
-                  <div className="flex items-center min-h-[60px]">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
                       10:00~
                     </div>
@@ -264,7 +264,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 10:30~ 開発開始 */}
-                  <div className="flex items-center">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-red-200 text-sm sm:text-base">
                       10:30~
                     </div>
@@ -273,7 +273,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 12:30~ 昼食 */}
-                  <div className="flex items-center min-h-[60px]">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
                       12:30~
                     </div>
@@ -282,7 +282,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 13:30~ 開発時間 */}
-                  <div className="flex items-center">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-red-200 text-sm sm:text-base">
                       13:30~
                     </div>
@@ -291,7 +291,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 17:40~ 終了セッション */}
-                  <div className="flex items-center min-h-[60px]">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
                       17:40~
                     </div>
@@ -300,7 +300,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* 18:00 解散 */}
-                  <div className="flex items-center min-h-[60px]">
+                  <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
                       18:00
                     </div>
@@ -372,10 +372,10 @@ export default function Home() {
                       発表
                     </div>
                   </div>
-                  {/* 16:40 情報交流会・審査結果*/}
+                  {/* 16:20 情報交流会・審査結果*/}
                   <div className="flex items-stretch">
                     <div className="w-1/3 px-2 sm:px-6 py-2 sm:py-4 font-semibold text-center border-r-2 border-black bg-white text-sm sm:text-base">
-                      <b></b>16:20~
+                      <b></b> <br></br>16:20~
                     </div>
                     <div className="w-2/3 px-2 sm:px-6 py-2 sm:py-4 text-center bg-white text-sm sm:text-base">
                       情報交流会<br></br>
@@ -457,6 +457,8 @@ export default function Home() {
               <br></br>
               　ぜひカメラをオンにしてご参加ください！
             </p>
+          </div>
+          <div>
             <div className="pb-8 border-b border-dashed border-gray-500">
               <h3 className="text-xl font-semibold mb-2">賞</h3>
               <ul className="text-gray-600 list-disc list-inside space-y-1 font-semibold">
@@ -492,7 +494,7 @@ export default function Home() {
             {/* ポップアップ */}
             {showModal && (
               <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-                <div className="bg-gray-800 text-white rounded-lg p-8 max-w-md sm:max-w-3xl w-full shadow-lg relative">
+                <div className="overflow-y-auto max-h-screen bg-gray-800 text-white rounded-lg p-8 max-w-md sm:max-w-3xl w-full shadow-lg relative">
                   <h2 className="text-xl sm:text-2xl font-bold mb-5 border-b border-red-500 pb-2">
                     開発ルール
                   </h2>
@@ -559,7 +561,7 @@ export default function Home() {
 
       {/*スマプロ*/}
       <div className="w-full max-w-[800px] text-center mt-20 px-4">
-        <h2 className="text-3xl font-bold mb-10">
+        <h2 className="text-xl sm:text-3xl font-bold mb-10">
           スマートフォンアプリプロジェクト
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start text-left">
